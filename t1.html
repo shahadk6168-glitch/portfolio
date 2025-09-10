@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammed Shahad K - Web Developer</title>
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif;}
+    body {
+      background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+      color:#222;
+      overflow-x:hidden;
+    }
+
+    /* Navbar */
+    nav {
+      display:flex; justify-content:space-between; align-items:center;
+      padding:15px 50px; background:#222; color:white; position:sticky; top:0;
+    }
+    nav h1 {font-size:22px;}
+    nav a {
+      color:white; margin:0 12px; text-decoration:none; transition:0.3s;
+    }
+    nav a:hover {color:#ffcc00;}
+
+    /* Hero */
+    .hero {
+      display:flex; align-items:center; justify-content:center;
+      padding:70px 20px;
+    }
+    .hero img {
+      width:250px; height:250px; border-radius:50%;
+      margin-right:40px; border:5px solid white;
+      box-shadow:0 5px 15px rgba(0,0,0,0.3);
+      transition:transform 0.3s;
+    }
+    .hero img:hover {transform:scale(1.05);}
+    .hero-text h2 {font-size:2.2rem; margin-bottom:10px; color:#222;}
+    .hero-text p {font-size:1.1rem; margin-bottom:20px;}
+
+    /* Social Icons */
+    .social-icons {display:flex; gap:15px;}
+    .icon {
+      width:45px; height:45px; border-radius:50%;
+      display:flex; align-items:center; justify-content:center;
+      background:#222; color:white; font-size:20px; cursor:pointer;
+      transition:0.3s;
+    }
+    .icon:hover {background:#ffcc00; color:#222; transform:translateY(-5px);}
+
+    section {padding:60px 20px; max-width:1100px; margin:auto;}
+    h2 {text-align:center; margin-bottom:20px; color:#222;}
+
+    /* Skills */
+    ul {list-style:none; padding:0;}
+    ul li {
+      background:white; padding:12px; margin:10px 0; border-radius:8px;
+      box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;
+    }
+    ul li:hover {background:#ffcc00; transform:translateX(8px);}
+
+    /* Experience */
+    .experience {
+      background:white;
+      padding:25px;
+      border-radius:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.2);
+      max-width:800px;
+      margin:auto;
+    }
+    .experience h3 {
+      margin-bottom:10px; color:#222;
+    }
+    .experience p {margin-bottom:8px; line-height:1.5;}
+
+    /* Projects */
+    .projects {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px;}
+    .project-card {
+      background:white; border-radius:10px; padding:20px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.2); transition:0.3s;
+      text-align:center;
+    }
+    .project-card:hover {transform:translateY(-8px);}
+    .project-card h3 {color:#222; margin-bottom:10px;}
+
+    /* Contact Form */
+    .contact-box {
+      max-width:500px; margin:auto; background:white;
+      padding:30px; border-radius:10px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.25);
+    }
+    .contact-box input, .contact-box textarea {
+      width:100%; padding:12px; margin:10px 0;
+      border:1px solid #ccc; border-radius:5px;
+      outline:none; font-size:1rem;
+      transition:0.3s;
+    }
+    .contact-box input:focus, .contact-box textarea:focus {
+      border-color:#ffcc00;
+    }
+    .contact-box button {
+      width:100%; padding:12px; background:#222; color:white;
+      border:none; border-radius:5px; font-size:1rem;
+      cursor:pointer; transition:0.3s;
+    }
+    .contact-box button:hover {background:#ffcc00; color:#222;}
+
+    /* Footer */
+    footer {text-align:center; padding:20px; background:#222; color:white; margin-top:30px;}
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h1>Shahad</h1>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="IMG-20240410-WA0027(1).jpg" alt="Mohammed Shahad K">
+    <div class="hero-text">
+      <h2>Mohammed Shahad K</h2>
+      <p>I'm a Web Developer passionate about creating modern, responsive websites with interactive designs.</p>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" class="icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://github.com" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+        <a href="https://youtube.com" target="_blank" class="icon"><i class="fab fa-youtube"></i></a>
+        <a href="https://twitter.com" target="_blank" class="icon"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p style="text-align:center;">I build user-friendly and visually appealing websites using modern web technologies. 
+    My focus is on clean design, responsiveness, and smooth user experience.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Responsive Web Design</li>
+      <li>UI/UX Concepts</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <div class="experience">
+      <h3>Bridgeon</h3>
+      <p><strong>Role:</strong> Web Developer Intern</p>
+      <p><strong>Duration:</strong> [Add Your Duration Here]</p>
+      <p>Worked on real-world projects where I built responsive web pages, interactive designs, and improved user interfaces.  
+      Gained hands-on experience with frontend development, version control, and collaborative teamwork.</p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Trivango Clone</h3>
+        <p>A travel booking website inspired by Trivago with hotel search and booking features.</p>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio with animations and responsive design.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-box">
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Mohammed Shahad K | Web Developer</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you! Your message has been received.");
+    });
+  </script>
+</body>
+</html>
